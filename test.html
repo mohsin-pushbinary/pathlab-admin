@@ -156,7 +156,7 @@
 
         <main class="content">
           <div class="container-fluid p-0">
-            <h1 class="h3 mb-3">Patient (User List)</h1>
+            <h1 class="h3 mb-3">Test Management</h1>
             <div class="row">
               <div class="col-12 col-lg-12 col-xxl-1 d-flex">
                 <div class="card flex-fill">
@@ -166,16 +166,11 @@
                         <input
                           type="text"
                           class="form-control"
-                          placeholder="Namewise Search"
-                          aria-label="first name"
+                          placeholder="Test Search"
+                          aria-label="testname"
                         />
                       </div>
-                      <div class="col-md-2">
-                        <select class="form-select">
-                          <option>Male</option>
-                          <option>Female</option>
-                        </select>
-                      </div>
+                     
                       <div class="col-md-2">
                         <button class="btn btn-primary">
                           <i class="fa-solid fa-magnifying-glass"></i>
@@ -187,7 +182,7 @@
                           id="addPatient"
                           class="btn btn-primary justify-content-end float-right"
                         >
-                          <i class="fa-solid fa-plus"></i> Add Patient
+                          <i class="fa-solid fa-plus"></i> Add New Test
                         </button>
                       </div>
                     </div>
@@ -195,12 +190,10 @@
                       <thead>
                         <tr>
                           <th>S.No</th>
-                          <th>Patient Name</th>
-                          <th class="d-none d-xl-table-cell">Date of Birth</th>
-                          <th>Mobile No.</th>
-                          <th class="d-none d-xl-table-cell">Relation</th>
-                          <th class="d-none d-md-table-cell">Gender</th>
-                          <th>Email</th>
+                          <th>Test Name</th>
+                          <th class="d-none d-xl-table-cell">Paramenter Covered</th>
+                          <th>Test Provide</th>
+                          <th class="d-none d-xl-table-cell">Price</th>                          
                           <th>Status</th>
                           <th>Action</th>
                         </tr>
@@ -208,94 +201,106 @@
                       <tbody>
                         <tr>
                           <td>1</td>
-                          <td>Hanish Sharma</td>
-                          <td class="d-none d-xl-table-cell">10-03-1990</td>
-                          <td>+91 9799004408</td>
-                          <td class="d-none d-xl-table-cell">Self</td>
-                          <td class="d-none d-md-table-cell">Male</td>
-                          <td>hanish@gmail.com</td>
-                          <td><span class="badge bg-success">Regular</span></td>
+                          <td style="width: 30%;">SCA-1 (SPINOCEREBELLAR ATAXIA), ATXN1</td>
+                          <td class="d-none d-xl-table-cell">1</td>
+                          <td>Home Collection</td>
+                          <td class="d-none d-xl-table-cell">2700</td>                      
+                          <td><span class="badge bg-success">Active</span></td>
                           <td>
-                            <a href="patient-view.html" class="btn btn-primary"
-                              ><i class="fa-solid fa-eye"></i
-                            ></a>
-                            <button class="btn btn-danger">
-                              <i class="fa-solid fa-trash"></i>
-                            </button>
+                            <a href="test-view.html" class="btn btn-primary"
+                                ><i class="fa-solid fa-eye"></i
+                              ></a>
+                              <a href="#" id="updateTest" class="btn btn-success"
+                                ><i class="fa-solid fa-pen"></i
+                              ></a>
+
+                              <a href="#" class="btn btn-danger">
+                                <i class="fa-solid fa-trash"></i>
+                              </a>
                           </td>
                         </tr>
                         <tr>
                           <td>2</td>
-                          <td>Rohit Sharma</td>
-                          <td class="d-none d-xl-table-cell">31-01-1990</td>
-                          <td>+91 9876543210</td>
-                          <td class="d-none d-xl-table-cell">Self</td>
-                          <td class="d-none d-md-table-cell">Male</td>
-                          <td>rohit@gmail.com</td>
-                          <td><span class="badge bg-success">Regular</span></td>
+                          <td>SCA-2 (SPINOCEREBELLAR ATAXIA), ATXN2</td>
+                          <td class="d-none d-xl-table-cell">2</td>
+                          <td>Lab Visit</td>
+                          <td class="d-none d-xl-table-cell">2700</td>
+                          <td><span class="badge bg-success">Avtive</span></td>
                           <td>
-                            <a href="patient-view.html" class="btn btn-primary"
-                              ><i class="fa-solid fa-eye"></i
-                            ></a>
-                            <button class="btn btn-danger">
-                              <i class="fa-solid fa-trash"></i>
-                            </button>
+                            <a href="test-view.html" class="btn btn-primary"
+                                ><i class="fa-solid fa-eye"></i
+                              ></a>
+                              <a href="#" id="updateTest" class="btn btn-success"
+                                ><i class="fa-solid fa-pen"></i
+                              ></a>
+
+                              <a href="#" class="btn btn-danger">
+                                <i class="fa-solid fa-trash"></i>
+                              </a>
                           </td>
                         </tr>
                         <tr>
-                          <td>3</td>
-                          <td>Soanl Sharma</td>
-                          <td class="d-none d-xl-table-cell">15-10-1996</td>
-                          <td>+91 9654781230</td>
-                          <td class="d-none d-xl-table-cell">Self</td>
-                          <td class="d-none d-md-table-cell">female</td>
-                          <td>sonal@gmail.com</td>
-                          <td><span class="badge bg-success">Regular</span></td>
-                          <td>
-                            <a href="patient-view.html" class="btn btn-primary"
-                              ><i class="fa-solid fa-eye"></i
-                            ></a>
-                            <button class="btn btn-danger">
-                              <i class="fa-solid fa-trash"></i>
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Kishor Kumar</td>
-                          <td class="d-none d-xl-table-cell">05-02-1992</td>
-                          <td>+91 89784561234</td>
-                          <td class="d-none d-xl-table-cell">Self</td>
-                          <td class="d-none d-md-table-cell">Female</td>
-                          <td>kishor@gmail.com</td>
-                          <td><span class="badge bg-danger">cancel</span></td>
-                          <td>
-                            <button class="btn btn-primary">
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button class="btn btn-danger">
-                              <i class="fa-solid fa-trash"></i>
-                            </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>5</td>
-                          <td>Ramesh Kumar</td>
-                          <td class="d-none d-xl-table-cell">02-02-1988</td>
-                          <td>+91 7689547812</td>
-                          <td class="d-none d-xl-table-cell">Self</td>
-                          <td class="d-none d-md-table-cell">Female</td>
-                          <td>ramesh@gmail.com</td>
-                          <td><span class="badge bg-success">Regular</span></td>
-                          <td>
-                            <button class="btn btn-primary">
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button class="btn btn-danger">
-                              <i class="fa-solid fa-trash"></i>
-                            </button>
-                          </td>
-                        </tr>
+                            <td>3</td>
+                            <td>SCA-3 (SPINOCEREBELLAR ATAXIA), ATXN3</td>
+                            <td class="d-none d-xl-table-cell">3</td>
+                            <td>Lab Visit</td>
+                            <td class="d-none d-xl-table-cell">2700</td>
+                            <td><span class="badge bg-success">Avtive</span></td>
+                            <td>
+                                <a href="test-view.html" class="btn btn-primary"
+                                ><i class="fa-solid fa-eye"></i
+                              ></a>
+                              <a href="#" id="updateTest" class="btn btn-success"
+                                ><i class="fa-solid fa-pen"></i
+                              ></a>
+
+                              <a href="#" class="btn btn-danger">
+                                <i class="fa-solid fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>MYOTONIC DYSTROPHY TYPE 1</td>
+                            <td class="d-none d-xl-table-cell">1</td>
+                            <td>Lab Visit</td>
+                            <td class="d-none d-xl-table-cell">6500</td>
+                            <td><span class="badge bg-success">Avtive</span></td>
+                            <td>
+                                <a href="test-view.html" class="btn btn-primary"
+                                ><i class="fa-solid fa-eye"></i
+                              ></a>
+                              <a href="#" id="updateTest" class="btn btn-success"
+                                ><i class="fa-solid fa-pen"></i
+                              ></a>
+
+                              <a href="#" class="btn btn-danger">
+                                <i class="fa-solid fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>MYOTONIC DYSTROPHY TYPE 2</td>
+                            <td class="d-none d-xl-table-cell">1</td>
+                            <td>Lab Visit</td>
+                            <td class="d-none d-xl-table-cell">7000</td>
+                            <td><span class="badge bg-danger">Deactivate</span></td>
+                            <td>
+                              <a href="test-view.html" class="btn btn-primary"
+                                ><i class="fa-solid fa-eye"></i
+                              ></a>
+                              <a href="#" id="updateTest" class="btn btn-success"
+                                ><i class="fa-solid fa-pen"></i
+                              ></a>
+
+                              <a href="#" class="btn btn-danger">
+                                <i class="fa-solid fa-trash"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        
+                        
                       </tbody>
                     </table>
                     <nav aria-label="Page navigation example" class="mt-3">
@@ -331,128 +336,67 @@
       <div class="modal-content">
         <div class="modal-header">
           <span class="close">&times;</span>
-          <p class=""><strong>ADD PATIENT</strong></p>
+          <p class=""><strong>Add New Test</strong></p>
         </div>
         <div class="modal-body">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-12">
               <div class="mb-3">
-                <label class="form-label">Country Code</label>
+                <label class="form-label">Test Name</label>
                 <input
                   class="form-control"
-                  type="text"
-                  id="cocode"
+                  type="text"                 
                   name="username"
-                  value="+91"
+                 value="SCA-1 (SPINOCEREBELLAR ATAXIA), ATXN1"
                   placeholder="Country Code"
                 />
               </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-12">
               <div class="mb-3">
-                <label class="form-label">Mobile Number</label>
+                <label class="form-label">Paramenter Covered</label>
                 <input
                   class="form-control"
-                  type="text"
-                  id="mobilenumber"
-                  value="9799004408"
-                  name="username"
-                  placeholder="Mobile Number"
+                  type="number"
+                 a
+                  value="1"
+                  name="parameter"
+                  placeholder=""
                 />
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="mb-3">
-                <label class="form-label">Full Name </label>
-                <input
-                  class="form-control"
-                  type="text"
-                  id="name"
-                  value="Hanish Sharma"
-                  name="fullname"
-                  placeholder="Full Name"
-                />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="mb-3">
-                <label class="form-label">Date of Birth </label>
-                <input
-                  class="form-control"
-                  type="date"
-                  id="dob"
-                  value="20-05-1995"
-                  name="dob"
-                />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="mb-3">
-                <label class="form-label">Spouse</label>
+                <label class="form-label">Test Provide</label>
                 <select class="form-select">
-                  <option value="Family">Relation *</option>
-                  <option value="spouse">Spouse</option>
-                  <option value="daughter">Daughter</option>
-                  <option value="son">Son</option>
-                  <option value="father">Father</option>
-                  <option value="mother">Mother</option>
-                  <option selected="" value="Family">Family</option>
+                    <option>Home Collection</option>
+                    <option>Lab Visit</option>
                 </select>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="mb-3" style="">
-                <label class="form-label">Email</label>
+              <div class="mb-3">
+                <label class="form-label">Price </label>
                 <input
                   class="form-control"
                   type="text"
-                  value="hanish@gmail.com"
-                  placeholder="Email"
+                  
+                  value="2700"
+                  
                 />
               </div>
             </div>
-            <div class="col-md-12">
-              <label class="form-label">Gender</label>
-              <div id="myDIV">
-                <div class="gender-block w-100 flexcol">
-                  <span
-                    class="corp-block gender genactive"
-                    onclick="checkgender()"
-                    aria-label="genderAvatarButton"
-                  >
-                    <i class="fa-solid fa-person fa-2x" aria-hidden="true"></i>
-                  </span>
-                  <span
-                    class="corp-block gender"
-                    onclick="checkgender()"
-                    aria-label="genderAvatarButton"
-                  >
-                    <i
-                      class="fa-solid fa-person-dress fa-2x"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                  <span
-                    class="corp-block gender"
-                    onclick="checkgender()"
-                    aria-label="genderAvatarButton"
-                  >
-                    <i
-                      class="fa-solid fa-person-half-dress fa-2x"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                </div>
-              </div>
-            </div>
+            
+           
+           
 
             <button
               type="button"
               id="addPatient"
               class="btn btn-primary btn-lg mb-2 mt-5"
             >
-              Register
+              Add New test
             </button>
           </div>
         </div>
@@ -462,94 +406,102 @@
       <div class="modal-content">
         <div class="text-green text-center mb-4"><i class="fa-solid fa-circle-check fa-7x" aria-hidden="true"></i></div>
         <h1 class="text-center text-black" style="margin-top:5px;">Thank You!</h1>
-        <p class="text-center text-blue font-22" style="margin-top:5px;">Patient added was successful </p>
+        <p class="text-center text-blue font-22" style="margin-top:5px;">Test added was successful </p>
         <div class="text-center mb-5">
-          <a href="patient.html" class="btn btn-primary btn-lg">ok</a>       
+          <a href="test.html" class="btn btn-primary btn-lg">ok</a>       
+        </div>
+      </div>     
+    </div>
+    
+    <!--update test Modal -->
+    <div id="updateTestmodal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <p class=""><strong>Update New Test</strong></p>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <label class="form-label">Test Name</label>
+                  <input
+                    class="form-control"
+                    type="text"                 
+                    name="username"
+                   value="SCA-1 (SPINOCEREBELLAR ATAXIA), ATXN1"
+                    placeholder="Country Code"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <label class="form-label">Paramenter Covered</label>
+                  <input
+                    class="form-control"
+                    type="number"
+                   a
+                    value="1"
+                    name="parameter"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Test Provide</label>
+                  <select class="form-select">
+                      <option>Home Collection</option>
+                      <option>Lab Visit</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Price </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    
+                    value="2700"
+                    
+                  />
+                </div>
+              </div>
+              
+             
+             
+  
+              <button
+                type="button"
+                id="updateTest"
+                class="btn btn-primary btn-lg mb-2 mt-5"
+              >
+                Update Test
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-     
-    </div>
+      <div id="updatethanksmodal" class="modal">
+        <div class="modal-content">
+          <div class="text-green text-center mb-4"><i class="fa-solid fa-circle-check fa-7x" aria-hidden="true"></i></div>
+          <h1 class="text-center text-black" style="margin-top:5px;">Thank You!</h1>
+          <p class="text-center text-blue font-22" style="margin-top:5px;">Test Update successful </p>
+          <div class="text-center mb-5">
+            <a href="test.html" class="btn btn-primary btn-lg">ok</a>       
+          </div>
+        </div>     
+      </div>
 
     <script src="js/app.js"></script>
     <script
       src="https://kit.fontawesome.com/e3d3afcbb9.js"
       crossorigin="anonymous"
     ></script>
-    <!-- <script>
-      // Get the modal
-      var modal = document.getElementById("addPatientmodal");
-
-      // Get the button that opens the modal
-      var btn = document.getElementById("addPatient");
-
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks the button, open the modal
-      btn.onclick = function () {
-        modal.style.display = "block";
-      };
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
-    </script> -->
-    <script>
-      function checkgender() {
-        var header = document.getElementById("myDIV");
-        var btns = header.getElementsByClassName("gender");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function () {
-            var current = document.getElementsByClassName("genactive");
-            current[0].className = current[0].className.replace(
-              " genactive",
-              ""
-            );
-            this.className += " genactive";
-          });
-        }
-      }
-      // Get the Register button element
-      var registerButton = document.querySelector(
-        "#addPatientmodal #addPatient"
-      );
-
-      // Get the thanks modal element
-      var thanksModal = document.getElementById("thanksmodal");
-
-      // When the Register button is clicked, display the thanks modal
-      registerButton.addEventListener("click", function () {
-        // Show the thanks modal
-        thanksModal.style.display = "block";
-      });
-
-      window.onclick = function (event) {
-        if (event.target == thanksModal) {
-          thanksModal.style.display = "none";
-        }
-      };
-    </script>
-    <!-- <script>
-      // Get the Register button element
-      var registerButton = document.getElementById("addPatient");
-
-      // Get the thanks modal element
-      var thanksModal = document.getElementById("thanksmodal");
-
-      // When the Register button is clicked, display the thanks modal
-      registerButton.addEventListener("click", function () {
-        // Show the thanks modal
-        thanksModal.style.display = "block";
-      });
-    </script> -->
+    
     <script>
       // Get the modal
       var modal = document.getElementById("addPatientmodal");
@@ -601,5 +553,58 @@
         }
       };
     </script>
+
+    <!-- updatetestmodal -->
+    <!-- <script>
+        // Get the modal
+        var modal = document.getElementById("updateTestmodal");
+  
+        // Get the button that opens the modal
+        var btn = document.getElementById("updateTest");
+  
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+  
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+          modal.style.display = "block";
+        };
+  
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
+  
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+  
+        // Get the thanks modal element
+        var updatethanksModal = document.getElementById("updatethanksmodal");
+  
+        // Get the Register button element inside the addPatientmodal
+        var updateButton = document.querySelector(
+          "#updateTestmodal #updateTest"
+        );
+  
+        // When the Register button inside the addPatientmodal is clicked, display the thanks modal
+        updateButton.addEventListener("click", function () {
+          // Show the thanks modal
+          updatethanksModal.style.display = "block";
+  
+          // Close the addPatientmodal
+          modal.style.display = "none";
+        });
+  
+        // Optional: Close the thanks modal when clicking outside of it
+        window.onclick = function (event) {
+          if (event.target == updatethanksModal) {
+            updatethanksModal.style.display = "none";
+          }
+        };
+      </script> -->
   </body>
 </html>
