@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="AdminKit" />
+    <meta name="keywords" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+    <link
+      rel="canonical"
+      href="https://demo-basic.adminkit.io/pages-blank.html"
+    />
+    <title>Patient</title>
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav id="sidebar" class="sidebar js-sidebar">
+        <div class="sidebar-content js-simplebar">
+          <a class="sidebar-brand" href="index.html">
+            <span class="align-middle">Aarav pathlab</span>
+          </a>
+          <ul class="sidebar-nav align-item-center">
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="index.html">
+                <i class="feather fa-solid fa-house"></i>
+                <span class="align-middle"> Dashboard</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="patient.html">
+                <i class="feather fa-solid fa-user"></i>
+                <span class="align-middle"> Patient Management</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="test.html">
+                <i class="feather fa-solid fa-file"></i>
+                <span class="align-middle"> Test Management</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="appointment.html">
+                <i class="feather fa-solid fa-calendar"></i>
+                <span class="align-middle"> Appointment Scheduling</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="billing.html">
+                <i class="feather fa-solid fa-warehouse"></i>
+                <span class="align-middle"> Billing and Invoicing</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="report.html">
+                <i class="feather fa-solid fa-chart-line"></i>
+                <span class="align-middle"> Reporting and Analytics</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <i class="feather fa-solid fa-file"></i>
+                <span class="align-middle"> Inventory Management</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <i class="feather fa-solid fa-lock"></i>
+                <span class="align-middle"> Data Security</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <i class="feather fa-solid fa-file"></i>
+                <span class="align-middle"> Audit Trail</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="#">
+                <i class="feather fa-solid fa-gear"></i>
+                <span class="align-middle"> Integration</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="main">
+        <nav class="navbar navbar-expand navbar-light navbar-bg">
+          <a class="sidebar-toggle js-sidebar-toggle">
+            <i class="hamburger align-self-center"></i>
+          </a>
+
+          <div class="navbar-collapse collapse">
+            <ul class="navbar-nav navbar-align">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-icon dropdown-toggle d-inline-block d-sm-none"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="align-middle" data-feather="settings"></i>
+                </a>
+                <a
+                  class="nav-link dropdown-toggle d-none d-sm-inline-block"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <img
+                    src="img/avatars/avatar.jpg"
+                    class="avatar img-fluid rounded me-1"
+                    alt="Charles Hall"
+                  />
+                  <span class="text-dark">Tanuj</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <a class="dropdown-item" href="profile.html"
+                    ><i class="align-middle me-1" data-feather="user"></i>
+                    Profile</a
+                  >
+
+                  <a class="dropdown-item" href="sign-in.html"
+                    ><i class="fa-solid fa-arrow-right-from-bracket"></i> Log
+                    out</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main class="content">
+          <div class="container-fluid p-0">
+            <h1 class="h3 mb-3">Inventory</h1>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-xl-12 col-xxl-12 d-flex">
+                  <div class="w-100">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col mt-0">
+                                <h5 class="card-title">Total Stock</h5>
+                              </div>
+
+                              <div class="col-auto">
+                                <div class="stat text-primary">
+                                  <i class="fa-solid fa-warehouse"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <h1 class="mt-1 mb-3 text-primary">320</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col mt-0">
+                                <h5 class="card-title">Order Equipment</h5>
+                              </div>
+
+                              <div class="col-auto">
+                                <div class="stat text-primary">
+                                  <i class="fa-solid fa-notes-medical"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <h1 class="mt-1 mb-3 text-primary">47</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col mt-0">
+                                <h5 class="card-title">Pending Order</h5>
+                              </div>
+
+                              <div class="col-auto">
+                                <div class="stat text-primary">
+                                  <i class="fa-solid fa-spinner"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <h1 class="mt-1 mb-3 text-primary">10</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col mt-0">
+                                <h5 class="card-title">Total Suppliers</h5>
+                              </div>
+
+                              <div class="col-auto">
+                                <div class="stat text-primary">
+                                  <i class="fa-solid fa-people-carry-box"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <h1 class="mt-1 mb-3 text-primary">5</h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-12 col-xxl-1">
+                <div class="card flex-fill">
+                  <div class="card-header">
+                    <h5 class="card-title mb-0">
+                      Stock Level of Items in Inventory
+                    </h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="row mt-3 mb-3">
+                      <div class="col-md-4">
+                        <select class="form-select">
+                          <option>Laboratory EQUIPMENT</option>
+                          <option>Chemical balance</option>
+                          <option>Microscope monocular student type</option>
+                          <option>Magnifying lens</option>
+                          <option>B.P. Instruments</option>
+                          <option>Urinometer</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-2">
+                        <button class="btn btn-primary">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <table class="table table-hover my-0">
+                      <thead>
+                        <tr>
+                          <th>S.No</th>
+                          <th>Laboratory Equipments</th>
+                          <th>Cuurent Quantity</th>
+                          <th class="d-none d-xl-table-cell">
+                            Min Stock Level
+                          </th>
+                          <th class="d-none d-xl-table-cell">
+                            Max Stock Level
+                          </th>
+                          <!-- <th>Action</th> -->
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Chemical balance</td>
+                          <td class="d-none d-xl-table-cell">50</td>
+                          <td>20</td>
+                          <td>50</td>
+                          <!-- 																							
+												<td>
+													<a href="#" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
+													<button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+												</td> -->
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Microscope monocular student type</td>
+                          <td class="d-none d-xl-table-cell">100</td>
+                          <td>50</td>
+                          <td>100</td>
+
+                          <!-- <td>
+													<a href="#" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
+													<button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+												</td> -->
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Magnifying lens</td>
+                          <td class="d-none d-xl-table-cell">150</td>
+                          <td>40</td>
+                          <td>150</td>
+
+                          <!-- <td>
+													<a href="#" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
+													<button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+												</td> -->
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>B.P. Instruments</td>
+                          <td class="d-none d-xl-table-cell">10</td>
+                          <td>5</td>
+                          <td>10</td>
+
+                          <!-- <td>
+													<a href="#" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
+													<button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+												</td> -->
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Urinometer</td>
+                          <td class="d-none d-xl-table-cell">10</td>
+                          <td>3</td>
+                          <td>10</td>
+
+                          <!-- <td>
+													<a href="#" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
+													<button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+												</td> -->
+                        </tr>
+                      </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example" class="mt-3">
+                      <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                          <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="card flex-fill">
+                  <div class="card-header">
+                    <h5 class="card-title mb-0">Order Equipment</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="row mt-3 mb-3">
+                      <div class="col-md-4">
+                        <select class="form-select">
+                          <option>Laboratory EQUIPMENT</option>
+                          <option>Chemical balance</option>
+                          <option>Microscope monocular student type</option>
+                          <option>Magnifying lens</option>
+                          <option>B.P. Instruments</option>
+                          <option>Urinometer</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-2">
+                        <button class="btn btn-primary">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                      <div class="col">
+                        <!-- <button
+                          type="button"
+                          id="addOrder"
+                          class="btn btn1 btn-primary justify-content-end float-right"
+                        >
+                          <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                          Add Order
+                        </button> -->
+                        <!-- This button is assumed to be outside the modal for demonstration purposes -->
+                        <button
+                          id="buttonToAddOrder"
+                          type="button"
+                          class="btn btn1 btn-primary justify-content-end float-right"
+                        >
+                          Add Order
+                        </button>
+                      </div>
+                    </div>
+                    <table class="table table-hover my-0">
+                      <thead>
+                        <tr>
+                          <th>S.No</th>
+                          <th>Order Date</th>
+                          <th style="width: 20%">Order Item</th>
+                          <th>store</th>
+                          <th>Qty</th>
+                          <th class="d-none d-xl-table-cell">Price</th>
+                          <th class="d-none d-xl-table-cell">Total</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>15-02-2023</td>
+                          <td>Chemical balance</td>
+                          <td class="d-none d-xl-table-cell">
+                            Aadam Equipment
+                          </td>
+                          <td>20</td>
+                          <td>70000</td>
+                          <td>140000</td>
+                          <td>
+                            <a href="order-view.html" class="btn btn-primary"
+                              ><i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a href="#" class="btn btn-success"
+                              ><i class="fa-solid fa-pen"></i
+                            ></a>
+                            <button class="btn btn-danger">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>17-02-2023</td>
+                          <td>Microscope monocular student type</td>
+                          <td class="d-none d-xl-table-cell">
+                            Benchmark Equipment
+                          </td>
+                          <td>2</td>
+                          <td>120000</td>
+                          <td>240000</td>
+                          <td>
+                            <a href="order-view.html" class="btn btn-primary"
+                              ><i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a href="#" class="btn btn-success"
+                              ><i class="fa-solid fa-pen"></i
+                            ></a>
+                            <button class="btn btn-danger">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>18-02-2023</td>
+                          <td>Magnifying lens</td>
+                          <td class="d-none d-xl-table-cell">
+                            Gilson Lab Equipment
+                          </td>
+                          <td>5</td>
+                          <td>50000</td>
+                          <td>250000</td>
+                          <td>
+                            <a href="order-view.html" class="btn btn-primary"
+                              ><i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a href="#" class="btn btn-success"
+                              ><i class="fa-solid fa-pen"></i
+                            ></a>
+                            <button class="btn btn-danger">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>20-02-2023</td>
+                          <td>B.P. Instruments</td>
+                          <td class="d-none d-xl-table-cell">
+                            Aadam Equipment
+                          </td>
+                          <td>10</td>
+                          <td>1500</td>
+                          <td>150000</td>
+                          <td>
+                            <a href="order-view.html" class="btn btn-primary"
+                              ><i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a href="#" class="btn btn-success"
+                              ><i class="fa-solid fa-pen"></i
+                            ></a>
+                            <button class="btn btn-danger">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>21-02-2023</td>
+                          <td>Urinometer</td>
+                          <td class="d-none d-xl-table-cell">
+                            Benchmark Equipment
+                          </td>
+                          <td>10</td>
+                          <td>2100</td>
+                          <td>21000</td>
+                          <td>
+                            <a href="order-view.html" class="btn btn-primary"
+                              ><i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a href="#" class="btn btn-success"
+                              ><i class="fa-solid fa-pen"></i
+                            ></a>
+                            <button class="btn btn-danger">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example" class="mt-3">
+                      <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                          <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="card flex-fill">
+                  <div class="card-header">
+                    <h5 class="card-title mb-0">Suppliers</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="row mt-3 mb-3">
+                      <div class="col-md-4">
+                        <select class="form-select">
+                          <option>Suppliers</option>
+                          <option>Aadam Equipment</option>
+                          <option>Benchmark Equipment</option>
+                          <option>Gilson Lab Equipment</option>
+                          <option>Cifla</option>
+                          <option>Bharat Pharmacy</option>
+                        </select>
+                      </div>
+                      <div class="col-md-2">
+                        <button class="btn btn-primary">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                      <div class="col">
+                        <!-- <button
+                          type="button"
+                          id="addSuppliers"
+                          class="btn btn-primary justify-content-end float-right"
+                        >
+                          <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                          Add Suppliers
+                        </button> -->
+                        <!-- This button is assumed to be outside the modal for demonstration purposes -->
+                        <button
+                          id="buttonToAddSuppliers"
+                          type="button"
+                          class="btn btn-primary justify-content-end float-right"
+                        >
+                          Add Suppliers
+                        </button>
+                      </div>
+                    </div>
+                    <table class="table table-hover my-0">
+                      <thead>
+                        <tr>
+                          <th>S.No</th>
+                          <th>Suppliers Id</th>
+                          <th style="width: 20%">Suppliers Name</th>
+                          <th>Phone Number</th>
+                          <th>City</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>101</td>
+                          <td>Aadam Equipment</td>
+                          <td class="d-none d-xl-table-cell">9874561230</td>
+                          <td>Panjab</td>
+                          <td>
+                            <a
+                              href="suppliers-view.html"
+                              class="btn btn-primary"
+                              ><i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a href="#" class="btn btn-success"
+                              ><i class="fa-solid fa-pen"></i
+                            ></a>
+                            <button class="btn btn-danger">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>102</td>
+                          <td>Benchmark Equipment</td>
+                          <td class="d-none d-xl-table-cell">6987451230</td>
+                          <td>Delhi</td>
+                          <td>
+                            <a
+                              href="suppliers-view.html"
+                              class="btn btn-primary"
+                              ><i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a href="#" class="btn btn-success"
+                              ><i class="fa-solid fa-pen"></i
+                            ></a>
+                            <button class="btn btn-danger">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>103</td>
+                          <td>Gilson Lab Equipment</td>
+                          <td class="d-none d-xl-table-cell">7894561230</td>
+                          <td>Delhi</td>
+                          <td>
+                            <a
+                              href="suppliers-view.html"
+                              class="btn btn-primary"
+                              ><i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a href="#" class="btn btn-success"
+                              ><i class="fa-solid fa-pen"></i
+                            ></a>
+                            <button class="btn btn-danger">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>104</td>
+                          <td>Cifla</td>
+                          <td class="d-none d-xl-table-cell">7412589630</td>
+                          <td>Delhi</td>
+                          <td>
+                            <a
+                              href="suppliers-view.html"
+                              class="btn btn-primary"
+                              ><i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a href="#" class="btn btn-success"
+                              ><i class="fa-solid fa-pen"></i
+                            ></a>
+                            <button class="btn btn-danger">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>105</td>
+                          <td>Bharat Pharmacy</td>
+                          <td class="d-none d-xl-table-cell">6985741232</td>
+                          <td>Mumbai</td>
+                          <td>
+                            <a
+                              href="suppliers-view.html"
+                              class="btn btn-primary"
+                              ><i class="fa-solid fa-eye"></i
+                            ></a>
+                            <a href="#" class="btn btn-success"
+                              ><i class="fa-solid fa-pen"></i
+                            ></a>
+                            <button class="btn btn-danger">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example" class="mt-3">
+                      <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                          <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div id="addSuppmodal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <p class=""><strong>ADD Suppliers</strong></p>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label class="form-label"> Suppliers Id</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="suppname"
+                  value="+91"
+                  placeholder="Country Code"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Suppliers Name</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id=""
+                  value=""
+                  name=""
+                  placeholder="Suppliers Name"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Phone Number </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="ph"
+                  value=""
+                  name="phone"
+                  placeholder="Phone number"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label class="form-label">City</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id=""
+                  value=""
+                  name=""
+                />
+              </div>
+            </div>
+
+            <!-- <button
+              type="button"
+              id="addSuppliers"
+              class="btn btn-primary btn-lg mb-2 mt-5"
+            >
+              Save Suppliers
+            </button> -->
+            <button
+              type="button"
+              id="saveSuppliers"
+              class="btn btn-primary btn-lg mb-2 mt-5"
+            >
+              Save Suppliers
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="thanksmodal" class="modal">
+      <div class="modal-content">
+        <div class="text-green text-center mb-4">
+          <i class="fa-solid fa-circle-check fa-7x" aria-hidden="true"></i>
+        </div>
+        <h1 class="text-center text-black" style="margin-top: 5px">
+          Thank You!
+        </h1>
+        <p class="text-center text-blue font-22" style="margin-top: 5px">
+          Suppliers added was successful
+        </p>
+        <div class="text-center mb-5">
+          <a href="inventory.html" class="btn btn-primary btn-lg">ok</a>
+        </div>
+      </div>
+    </div>
+    <!-- ordermodal -->
+    <!-- Modal -->
+    <div id="addOrdermodal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <p class=""><strong>ADD Order</strong></p>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Order Date</label>
+                <input
+                  class="form-control"
+                  type="date"
+                  name=""
+                  value=""
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Order Item</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id=""
+                  value=""
+                  name=""
+                  placeholder="order Item"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label class="form-label">store </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id=""
+                  value=""
+                  name=""
+                  placeholder="Store"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Qty</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id=""
+                  value=""
+                  name=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Price</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id=""
+                  value=""
+                  name=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Total</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id=""
+                  value=""
+                  name=""
+                  disabled
+                />
+              </div>
+            </div>
+            <button
+              type="button"
+              id="saveOrder"
+              class="btn btn-primary btn-lg mb-2 mt-5"
+            >
+              Save Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="orderthanksmodal" class="modal">
+      <div class="modal-content">
+        <div class="text-green text-center mb-4">
+          <i class="fa-solid fa-circle-check fa-7x" aria-hidden="true"></i>
+        </div>
+        <h1 class="text-center text-black" style="margin-top: 5px">
+          Thank You!
+        </h1>
+        <p class="text-center text-blue font-22" style="margin-top: 5px">
+          Order added was successful
+        </p>
+        <div class="text-center mb-5">
+          <a href="inventory.html" class="btn btn-primary btn-lg">ok</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e3d3afcbb9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Open modal function
+        function openModal(modalId) {
+          const modal = document.getElementById(modalId);
+          modal.style.display = "block";
+        }
+
+        // Close modal function
+        function closeModal(modalId) {
+          const modal = document.getElementById(modalId);
+          modal.style.display = "none";
+        }
+
+        // Close modal when clicking on <span> (x)
+        document.querySelectorAll(".close").forEach((closeBtn) => {
+          closeBtn.addEventListener("click", function () {
+            this.closest(".modal").style.display = "none";
+          });
+        });
+
+        // Add event listener to "Add Suppliers" button to open the modal
+        document
+          .querySelectorAll('[id^="addSuppliers"], [id^="addOrder"]')
+          .forEach((button) => {
+            button.addEventListener("click", function () {
+              const modalId =
+                this.id === "addSuppliers" ? "addSuppmodal" : "addOrdermodal";
+              openModal(modalId);
+            });
+          });
+
+        // Handle "Save Suppliers" button click
+        document
+          .getElementById("addSuppliers")
+          .addEventListener("click", function () {
+            openModal("addSuppmodal"); // Close the "Add Suppliers" modal
+            // openModal("thanksmodal"); // Open the "Thank You" modal for suppliers
+          });
+
+        // Handle "Save Order" button click
+        document
+          .getElementById("addOrder")
+          .addEventListener("click", function () {
+            openModal("addOrdermodal"); // Close the "Add Order" modal
+            // openModal("orderthanksmodal"); // Open the "Thank You" modal for order
+          });
+      });
+    </script> -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Open modal function
+        function openModal(modalId) {
+          const modal = document.getElementById(modalId);
+          modal.style.display = "block";
+        }
+
+        // Close modal function
+        function closeModal(modalId) {
+          const modal = document.getElementById(modalId);
+          modal.style.display = "none";
+        }
+
+        // Close modal when clicking on <span> (x)
+        document.querySelectorAll(".close").forEach((closeBtn) => {
+          closeBtn.addEventListener("click", function () {
+            this.closest(".modal").style.display = "none";
+          });
+        });
+
+        // Assuming you have buttons specifically for opening the modals
+        // Add event listeners to those buttons (you might need to adjust based on your actual HTML)
+        document
+          .getElementById("buttonToAddSuppliers")
+          .addEventListener("click", function () {
+            openModal("addSuppmodal");
+          });
+
+        document
+          .getElementById("buttonToAddOrder")
+          .addEventListener("click", function () {
+            openModal("addOrdermodal");
+          });
+
+        // Corrected: Handle "Save Suppliers" button click
+        // Ensure you have a button with the ID `saveSuppliers` for saving suppliers
+        document
+          .getElementById("saveSuppliers")
+          .addEventListener("click", function () {
+            closeModal("addSuppmodal"); // Close the "Add Suppliers" modal
+            openModal("thanksmodal"); // Open the "Thank You" modal for suppliers
+          });
+
+        // Corrected: Handle "Save Order" button click
+        // Ensure you have a button with the ID `saveOrder` for saving orders
+        document
+          .getElementById("saveOrder")
+          .addEventListener("click", function () {
+            closeModal("addOrdermodal"); // Close the "Add Order" modal
+            openModal("orderthanksmodal"); // Open the "Thank You" modal for orders
+          });
+      });
+    </script>
+  </body>
+</html>
